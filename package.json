@@ -1,0 +1,23 @@
+{
+	"name": "holospace",
+	"version": "0.1.0",
+	"description": "The final chat tier",
+	"main": "index.js",
+	"scripts": {
+		"dev": "next",
+		"build": "next build",
+		"start": "next start"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git@savvy.github.com:NiicoSavvy/holospace.git"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"dependencies": {
+		"next": "^7.0.2",
+		"react": "^16.7.0",
+		"react-dom": "^16.7.0"
+	}
+}
