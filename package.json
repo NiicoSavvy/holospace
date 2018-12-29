@@ -4,9 +4,9 @@
 	"description": "The final chat tier",
 	"main": "index.js",
 	"scripts": {
-		"dev": "next",
+		"dev": "node server",
 		"build": "next build",
-		"start": "next start"
+		"start": "NODE_ENV=production node server"
 	},
 	"repository": {
 		"type": "git",
@@ -16,6 +16,7 @@
 	"author": "",
 	"license": "ISC",
 	"dependencies": {
+		"express": "^4.16.4",
 		"next": "^7.0.2",
 		"react": "^16.7.0",
 		"react-dom": "^16.7.0"
