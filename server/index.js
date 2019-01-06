@@ -9,9 +9,12 @@ app.prepare()
 	.then(() => {
 		const server = express();
 
-		server.get("/holograms/:id", (req, res) => {
-			const page = "/hologram";
-			const queryParams = { title: req.params.id };
+		server.get("/disks/:deckId/:diskId", (req, res) => {
+			const page = "/public";
+			const queryParams = {
+				deckId: req.params.deckId,
+				diskId: req.params.diskId
+			};
 			app.render(req, res, page, queryParams);
 		});
 
